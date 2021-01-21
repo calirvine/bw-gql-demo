@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:Server": "cd graphql-demo-api && npm i && npm run dev",
+    "start:server": "cd graphql-demo-api && npm i && npm run dev",
     "start:client": "cd client && npm i && npm run dev",
     "watch:gql": "cd client && npx apollo client:codegen --target=typescript --watch",
     "test": "echo \"Error: no test specified\" && exit 1"

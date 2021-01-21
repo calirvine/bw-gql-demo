@@ -1,9 +1,12 @@
-import { gql, useQuery } from '@apollo/client';
-import Head from 'next/head';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import styles from '../styles/Home.module.css';
-import { PageQuery, PageQueryVariables } from './__generated__/PageQuery';
+import { gql, useQuery } from "@apollo/client";
+import Head from "next/head";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import styles from "../styles/Home.module.css";
+import { PageQuery, PageQueryVariables } from "./__generated__/PageQuery";
+
+import { HeroSection } from "../components/HeroSection";
+import { OneBlockSection } from "../components/OneBlockSection";
 
 export const PAGE_QUERY = gql`
   query PageQuery($slug: String!) {
